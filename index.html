@@ -13,11 +13,11 @@
 =============================================================== -->
 <script>
   const INFO = {
-    phone:    "07 71 00 12 41",
-    phoneRaw: "+33771001241",
-    address:  "14 Av. Gabriel Lippmann, 91700 Sainte-Geneviève-des-Bois",
-    zone:     "Z.I. de la Croix Blanche — Sainte-Geneviève-des-Bois (91)",
-    mapsUrl:  "https://www.google.com/maps/search/?api=1&query=Yacine+Menuiserie+14+Avenue+Gabriel+Lippmann+91700+Sainte-Genevieve-des-Bois"
+    phone:    "06 23 45 67 89",
+    phoneRaw: "+33623456789",
+    address:  "Sainte-Geneviève-des-Bois (91)",
+    zone:     "Sainte-Geneviève-des-Bois (91) et alentours",
+    mapsUrl:  "https://www.google.com/maps/search/?api=1&query=Sainte-Genevieve-des-Bois"
   };
 </script>
 
@@ -26,6 +26,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+  /* Coordonnées floutées (démo portfolio Sitaly) */
+  .pii-blur{filter:blur(6px);-webkit-filter:blur(6px);user-select:none;cursor:default}
   :root{
     --ink:#26201A;          /* noyer très foncé */
     --ink-2:#3D3329;
@@ -346,7 +348,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-cta">
-      <a class="nav-phone" id="navPhone" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span id="navPhoneTxt">07 71 00 12 41</span></a>
+      <a class="nav-phone" id="navPhone" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span id="navPhoneTxt" class="pii-blur">06 23 45 67 89</span></a>
       <a class="btn btn-gold" id="navDevis" href="#contact">Devis gratuit</a>
       <button class="burger" id="burger" aria-label="Ouvrir le menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
@@ -576,11 +578,11 @@
       <div class="info-card">
         <div class="info-row">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-          <div><div class="k">Téléphone</div><div class="v"><a id="contactPhone" href="#">07 71 00 12 41</a></div></div>
+          <div><div class="k">Téléphone</div><div class="v"><a id="contactPhone" class="pii-blur" href="#">06 23 45 67 89</a></div></div>
         </div>
         <div class="info-row">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <div><div class="k">Atelier</div><div class="v">14 Av. Gabriel Lippmann<br>91700 Sainte-Geneviève-des-Bois</div><div style="color:var(--muted);font-size:.92rem;margin-top:3px">Z.I. de la Croix Blanche</div></div>
+          <div><div class="k">Atelier</div><div class="v pii-blur">Sainte-Geneviève-des-Bois<br>91700 Essonne</div><div class="pii-blur" style="color:var(--muted);font-size:.92rem;margin-top:3px">Zone industrielle</div></div>
         </div>
         <div class="info-row">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
@@ -615,7 +617,7 @@
       <h2>Votre projet sur mesure commence par un appel</h2>
       <p>Devis gratuit · particuliers & professionnels · déplacement à domicile</p>
       <div class="btns">
-        <a class="btn btn-gold" id="bannerCall" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07 71 00 12 41</a>
+        <a class="btn btn-gold" id="bannerCall" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="pii-blur">06 23 45 67 89</span></a>
       </div>
     </div>
   </div>
@@ -643,8 +645,8 @@
     <div>
       <h4>Contact</h4>
       <ul>
-        <li><a id="footPhone" href="#">07 71 00 12 41</a></li>
-        <li><a id="footMaps" href="#" target="_blank" rel="noopener">14 Av. Gabriel Lippmann, 91700</a></li>
+        <li><a id="footPhone" class="pii-blur" href="#">06 23 45 67 89</a></li>
+        <li><a id="footMaps" class="pii-blur" href="#" target="_blank" rel="noopener">Sainte-Geneviève-des-Bois (91)</a></li>
         <li>Lun – Sam · 09:00 à 17:00</li>
       </ul>
     </div>
